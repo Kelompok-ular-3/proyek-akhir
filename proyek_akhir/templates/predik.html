@@ -1,0 +1,168 @@
+{%  load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediksi Gizi Baduti</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/layout.css' %}">
+</head>
+<body>
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+            <a class="navbar-brand" style="color: #01C3FF" href="#">Kelompok Ular 3</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#header">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Prediksi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#kelompok">Kelompok</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        
+        
+        <selection class="header" id="header">
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div class="header-description order-last order-md-1 mt-3">"
+                            <h5 class="text-blue" >Prediksi Gizi Baduti, Menggunakan</h5>
+                            <h4 class="fw-bold">Antropometri</h4><br>
+                            <p>penjelasan tentang apa yang kita kelompok ular buat (masih dipikirkan)</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center order-first order-md-2">
+                        <img src="{% static 'img/logo.PNG' %}" width="450px" alt=""> <!-- gambar sementara -->
+                    </div>
+                </div>
+            </div>
+        </selection>
+    </header>
+
+
+     <!-- project -->
+     <section class="projects py-3 mt-5" id="projects">
+        <div class="container">
+          <div class="section-title-wrapper text-center">
+            <p class="text-blue" >Prediksi</p>
+            <h5 class="fw-bold">Prediksi Gizi Baduti menggunakna Antropometri</h5>
+        </div>
+
+        <div class="container">
+        <form action="" method="">
+            <div class="form-group">
+              <label>Usia Baduti</label>
+              <input type="text" class="form-control" name="usia">
+            </div>
+            <div class="form-group">
+              <label>Hasil</label>
+              <input type="text" class="form-control" name="hasil">
+            </div>
+            <div class="form-group">
+                <label>Berat Badan</label>
+                <input type="text" class="form-control" name="bb">
+              </div>
+              <div class="form-group">
+                <label>Rekomendasi</label>
+                <input type="text" class="form-control" name="rekomendasi">
+              </div>
+              <div class="form-group">
+                <label>Panjang Badan</label>
+                <input type="text" class="form-control" name="pb">
+              </div>
+              <div class="form-group">
+                <label>Rekomendasi2</label>
+                <input type="text" class="form-control" name="rekomendasi2">
+              </div>
+              <div class="form-group">
+                <label>Tinggi Badan</label>
+                <input type="text" class="form-control" name="tb">
+              </div>
+            </div>
+            <button id="btn-predict" style="background-color: #01C3FF" type="submit" class="btn btn-primary mt-5">Prediksi</button>
+            </div>
+          </div>
+          </form>
+        </div>
+        </div>
+        </div>
+    </section>
+    
+    <!-- info kelompok -->
+    <div id="kelompok" class="container-fluid text-center mt-5 mb-5">
+      <br>
+      <h2>ANGGOTA KELOMPOK</h2>
+      <h4>ULAR 3</h4>
+      <br>
+      <div class="row slideanim">
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-user logo-small"></span>
+          <h4>Muhammad Hakam Amnan</h4>
+          <p>Universitas Dipenegoro</p>
+        </div>
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-user logo-small"></span>
+          <h4>Indah Wardatunizza</h4>
+          <p>Universitas Dian Nuswantoro</p>
+        </div>
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-user logo-small"></span>
+          <h4>Irma binti Sya'idah</h4>
+          <p>Universitas Ahmad Dahlan</p>
+        </div>
+      </div>
+        <br>
+        <div class="row slideanim">
+        <div class="col-sm-6">
+          <span class="glyphicon glyphicon-user logo-small"></span>
+          <h4>Julio Alifiansyah</h4>
+          <p>Universitas Gadjah Mada</p>
+        </div>
+        <div class="col-sm-6">
+          <span class="glyphicon glyphicon-user logo-small"></span>
+          <h4>Enrico Zada</h4>
+          <p>Universitas Dian Nuswantoro</p>
+        </div>
+        </div>
+    </div>
+
+      <!-- footer -->
+    <footer class="footer py-5 text-white" id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h5 class="footer-title fw-bold">Kelompok Ular 3</h5>
+              <h6>Media Kami</h6>
+              <a href="https://github.com/Kelompok-ular-3/" class="footer-email fw-light">Github</a>
+            </div>
+            <div class="col-md-3">
+              <h5 class="footer-title fw-bold">Tautan</h5>
+              <div class="footer-link d-flex flex-column">
+                <a href="#header" class="link fw-light">Home</a>
+                <a href="#" class="link fw-light">Prediksi</a>
+                <a href="#" class="link fw-light">Kelompok</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+</html>
