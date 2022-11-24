@@ -57,52 +57,70 @@
 
 
      <!-- project -->
-     <section class="projects py-3 mt-5" id="projects">
-        <div class="container">
-          <div class="section-title-wrapper text-center">
-            <p class="text-blue" >Prediksi</p>
-            <h5 class="fw-bold">Prediksi Gizi Baduti menggunakna Antropometri</h5>
+     
+     <section class="projects" id="projects">
+      <div class="container">
+        <div class="row">
+          
+        <div class="section-title-wrapper text-center">
+          <p class="text-blue" >Prediksi</p>
+          <h5 class="fw-bold">Prediksi Gizi Baduti menggunakna Antropometri</h5>
+      </div>
+      
+      <div class="col-md-12 d-flex">
+      <div class="col-md-5">
+      <div class="card border-primary mb-3" style="max-width: 48rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body text-primary">
+            <form action="" method="">
+                <div class="form-group">
+                  <label>Usia Baduti</label>
+                  <input type="text" class="form-control" name="usia">
+                </div>
+                <div class="form-group">
+                  <label>Panjang Badan</label>
+                  <input type="text" class="form-control" name="pb">
+                </div>
+                <div class="form-group">
+                    <label>Berat Badan</label>
+                    <input type="text" class="form-control" name="bb">
+                  </div>
+                  <div class="form-group">
+                    <label>Tinggi Badan</label>
+                    <input type="text" class="form-control" name="tb">
+                  </div>
+                  <div>
+                    <button id="btn-predict" style="background-color: #01C3FF" type="submit" class="btn btn-primary mt-5">Prediksi</button>
+                  </div>
+              </form>
         </div>
-
-        <div class="container">
+      </div>
+  </div>
+    
+  <div class="container">
+      <div class="col-md-8">
         <form action="" method="">
-            <div class="form-group">
-              <label>Usia Baduti</label>
-              <input type="text" class="form-control" name="usia">
-            </div>
-            <div class="form-group">
-              <label>Hasil</label>
-              <input type="text" class="form-control" name="hasil">
-            </div>
-            <div class="form-group">
-                <label>Berat Badan</label>
-                <input type="text" class="form-control" name="bb">
-              </div>
-              <div class="form-group">
-                <label>Rekomendasi</label>
-                <input type="text" class="form-control" name="rekomendasi">
-              </div>
-              <div class="form-group">
-                <label>Panjang Badan</label>
-                <input type="text" class="form-control" name="pb">
-              </div>
-              <div class="form-group">
-                <label>Rekomendasi2</label>
-                <input type="text" class="form-control" name="rekomendasi2">
-              </div>
-              <div class="form-group">
-                <label>Tinggi Badan</label>
-                <input type="text" class="form-control" name="tb">
-              </div>
-            </div>
-            <button id="btn-predict" style="background-color: #01C3FF" type="submit" class="btn btn-primary mt-5">Prediksi</button>
-            </div>
+          <div class="form-group">
+            <label>Hasil</label>
+            <input type="text" class="form-control" name="hasil">
           </div>
-          </form>
-        </div>
-        </div>
-        </div>
-    </section>
+          <div class="form-group">
+            <label>Rekomendasi2</label>
+            <input type="text" class="form-control" name="rekomendasi2">
+          </div>
+          <div class="form-group">
+            <label>Rekomendasi</label>
+            <input type="text" class="form-control" name="rekomendasi">
+          </div>
+        </form>
+      </div>  
+    </div>
+    </div>
+  </div>
+      </div>
+    </div>
+      </div>
+  </section>
     
     <!-- info kelompok -->
     <div id="kelompok" class="container-fluid text-center mt-5 mb-5">
