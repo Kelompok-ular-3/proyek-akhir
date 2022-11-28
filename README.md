@@ -1,4 +1,9 @@
-# proyek-akhir
-
-#### Aplikasi Untuk Memprediksi Penyakit Diabetes Menggunakan Algoritma Random Forest
-Dataset yang digunakan yaitu https://www.kaggle.com/code/muhammadasifali/diabetes-prediction-using-classification/data
+===================
+[Packages List]
+===================
+Python   3.8.5
+Flask    2.1.0
+joblib   1.0.0
+pandas   1.4.2
+numpy    1.21.6
+sklearn  0.24.1
